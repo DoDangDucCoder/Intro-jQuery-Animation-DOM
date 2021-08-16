@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="scripts/jquery-1.6.2.min.js"></script>
+	<link rel="stylesheet" href="/styles/my_style.css">
+	<title>Document</title>
+</head>
+<body>
+	<div id="clickMe">Show me the Furry Friend of the Day</div>
+	<div id="picframe"><img src="images/furry_friend.jpg" alt=""></div>
+	<script>
+		$(document).ready(function() {
+			$("#clickMe").click(function() {
+				$("img").fadeIn(5000)
+				$("#picframe").slideToggle("slow");
+			});
+		});
+	</script>
+</body>
+</html>
